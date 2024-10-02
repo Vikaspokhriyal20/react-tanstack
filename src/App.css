@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rajdhani', monospace;
+}
+
+p,
+li {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.active {
+  color: white;
+}
+
+kbd {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: blueviolet;
+}
+
+.loading
+{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.loading p
+{
+  font-weight: 600;
+  color: crimson;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0rem 1.5rem;
+}
+
+/* header css  */
+
+header
+{
+  background-color: blueviolet;
+}
+
+.flex-col-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+}
+
+.web-menu  {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: black;
+}
+
+.menubar {
+  display:none;
+}
+
+.usercard {
+  padding: 2rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.title
+{
+  color:darkviolet;
+  text-transform: capitalize;
+  margin-bottom: 0.8rem;
+}
+
+
+@media screen and (max-width:700px) {
+  .grid-col-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menubar
+  {
+    display: block;
+  }
+  .web-menu
+  {
+    display: none;
+  }
+
+  .mobile-menu ul
+  {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color:cornflowerblue;
+    left: 0;
+    top: 5rem;
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .grid-col-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* footer css  */
+
+.footer-content {
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* home css */
+
+.home-content
+{
+  text-align:center;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 60vh;
+  z-index: 0;
+}
+
+.flex-gap
+{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.flex-gap a
+{
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: blueviolet;
+}
+
+.flex-gap a:nth-child(2){
+  color: deeppink;
+}
+
+.home-content h2
+{
+  font-size: 2rem;
+
+}
+
+.home-content p
+{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width:500px) {
+  .home-content p
+{
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.home-content h2
+{
+  font-size: 1.5rem;
+  filter: drop-shadow(4px 2px 4px rgb(241, 135, 13));
+}
+}

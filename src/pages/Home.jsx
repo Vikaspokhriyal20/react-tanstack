@@ -6,7 +6,7 @@ const Home = () => {
         <section>
             <div className='container'>
                 <div className="home-content">
-                    <h2>User Directory Connect Engage and Network</h2>
+                    <h1>User Directory Connect Engage and Network</h1>
                     <p>Browse through our vibrant community and start meaningful conversations</p>
                     <div className="flex-gap">
                     <NavLink to={'/fetchhold'}>View User</NavLink>

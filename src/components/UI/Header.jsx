@@ -22,6 +22,8 @@ const Header = () => {
                             <li><NavLink to={'/'}>Home</NavLink></li>
                             <li><NavLink to={'/fetchhold'}>Fetchuser</NavLink></li>
                             <li><NavLink to={'/fetching'}>Fetchpost</NavLink></li>
+                            <li><NavLink to={'/movie'}>Movies</NavLink></li>
+                            <li><NavLink to={'/infinite'}>Github</NavLink></li>
                         </ul>
                     </nav>
 

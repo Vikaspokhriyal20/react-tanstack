@@ -1,0 +1,105 @@
+[
+    {
+      "name": "Breaking Bad",
+      "type": "TV Series",
+      "release_date": "2008-01-20",
+      "genre": ["Crime" , "Drama" , "Thriller"],
+      "rating": 9.5,
+      "cast": ["Bryan Cranston" , "Aaron Paul" ,"Anna Gunn"],
+      "watch_url": "https://www.netflix.com/title/7014",
+      "description": "A high school chemistry teacher turned methamphetamine manufacturer partners with a former student to secure his family's future.",
+      "poster_url": "https://wallpaperaccess.com/full/12569336.jpg"
+    },
+    {
+      "name": "The Mandalorian",
+      "type": "TV Series",
+      "release_date": "2019-11-12",
+      "genre": ["Action", "Adventure", "Fantasy"],
+      "rating": 8.8,
+      "cast": [ "Pedro Pascal","Gina Carano","Carl Weathers"],
+      "watch_url": "https://www.disneyplus.com/series/the-mandalorian/3jLIGMDYINqD",
+      "description": "A lone bounty hunter navigates the outer reaches of the galaxy, far from the authority of the New Republic.",
+      "poster_url": "https://lumiere-a.akamaihd.net/v1/images/5d5fe9394335840001375adf-image_c79fb57f.jpeg?region=0,0,1536,864&width=960"
+    },
+    {
+      "name": "Stranger Things",
+      "type": "TV Series",
+      "release_date": "2016-07-15",
+      "genre": ["Drama", "Fantasy", "Horror"],
+      "rating": 8.7,
+      "cast": ["Winona Ryder","David Harbour","Millie Bobby Brown"],
+      "watch_url": "https://www.netflix.com/title/80057281",
+      "description": "A group of kids in a small town uncover government secrets and supernatural forces while searching for their missing friend.",
+      "poster_url": "https://wallpaperaccess.com/thumb/1087454.jpg"
+    },
+    {
+      "name": "The Crown",
+      "type": "TV Series",
+      "release_date": "2016-11-04",
+      "genre": ["Biography", "Drama", "History"],
+      "rating": 9.6,
+      "cast": ["Claire Foy","Matt Smith","Olivia Colman"],
+      "watch_url": "https://www.netflix.com/title/80025678",
+      "description": "A dramatization of the reign of Queen Elizabeth II and the political and personal events that shaped the second half of the 20th century.",
+      "poster_url": "https://wallpaperaccess.com/thumb/1902849.jpg"
+    },
+    {
+      "name": "The Witcher",
+      "type": "TV Series",
+      "release_date": "2019-12-20",
+      "genre": ["Action", "Adventure", "Drama"],
+      "rating": 8.2,
+      "cast": ["Henry Cavill","Anya Chalotra","Freya Allan"],
+      "watch_url": "https://www.netflix.com/title/80189685",
+      "description": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+      "poster_url": "https://wallpaperaccess.com/thumb/929260.jpg"
+    },
+    {
+      "name": "Parasite",
+      "type": "Movie",
+      "release_date": "2019-11-08",
+      "genre": ["Comedy", "Drama", "Thriller"],
+      "rating": 8.6,
+      "cast": ["Kang-ho Song" ,"Sun-kyun Lee", "Yeo-jeong Jo"],
+      "watch_url": "https://www.hulu.com/movie/parasite-26dcab49-09f2-4b36-9672-b301e084a281",
+      "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "poster_url": "https://wallpaperaccess.com/thumb/1423165.jpg"
+    },
+    {
+      "name": "Chernobyl",
+      "type": "Miniseries",
+      "release_date": "2019-05-06",
+      "genre": ["Drama", "History", "Thriller"],
+      "rating": 9.4,
+      "cast": ["Jared Harris","Stellan Skarsgard","Emily Watson"],
+      "watch_url": "https://www.hbo.com/chernobyl",
+      "description": "A dramatization of the Chernobyl nuclear disaster and the bureaucratic fallout that followed.",
+      "poster_url": "https://wallpaperaccess.com/full/7631001.jpg"
+    },
+
+
+    {
+      "name": "Money Heist",
+      "type": "TV Series",
+      "release_date": "2017-05-02",
+      "genre": ["Action", "Crime", "Drama"],
+      "rating": 9.2,
+      "cast": ["Ursula Corbero", "Alvaro Morte", "Itziar Ituno"],
+      "watch_url": "https://www.netflix.com/title/80192098",
+      "description": "A criminal mastermind who goes by 'The Professor' plans the biggest heist in recorded history to print billions of euros in the Royal Mint of Spain.",
+      "poster_url": "https://wallpaperaccess.com/thumb/6777555.jpg"
+    },
+
+    {
+      "name": "Squid Game",
+      "type": "TV Series",
+      "release_date": "2021-09-17",
+      "genre": ["Action", "Drama", "Thriller"],
+      "rating": 8.5,
+      "cast": [ "Lee Jung-jae","Park Hae-soo","HoYeon Jung"],
+      "watch_url": "https://www.netflix.com/title/81040344",
+      "description": "Hundreds of cash-strapped contestants accept an invitation to compete in children's games for a tempting prize, but the stakes are deadly.",
+      "poster_url": "https://wallpaperaccess.com/thumb/6998672.jpg"
+    }
+  ]
+  

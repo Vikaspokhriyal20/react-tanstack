@@ -11,9 +11,9 @@ const Fetchhold = () => {
         try {
             const res = await fetchUser();
             console.log(res);
-                res.status === 200 ? setData(res.data) : []
-                setLoading(false);
-            
+            res.status === 200 ? setData(res.data) : []
+            setLoading(false);
+
         } catch (error) {
             console.log(error);
             setLoading(false);
@@ -43,16 +43,16 @@ const Fetchhold = () => {
         )
     }
 
-
     return (
         <main>
             <div className='container'>
                 <div className="grid-col-3">
                     {data?.map((currUser) => {
+                        const { id, name, email } = currUser
                         return (
-                            <div className="usercard" key={currUser.id}>
-                                <p>{currUser.name}</p>
-                                <kbd>{currUser.email}</kbd>
+                            <div className="usercard" key={id}>
+                                <p>{name}</p>
+                                <kbd>{email}</kbd>
                             </div>
                         )
                     })}

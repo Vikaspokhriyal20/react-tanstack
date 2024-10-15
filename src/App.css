@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Rajdhani', monospace;
+  font-family: 'Arya', monospace;
 }
 
 p,
 li {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 ul li {
@@ -19,6 +19,8 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .active {
@@ -31,14 +33,12 @@ kbd {
   color: blueviolet;
 }
 
-.loading
-{
+.loading {
   margin-top: 2rem;
   text-align: center;
 }
 
-.loading p
-{
+.loading p {
   font-weight: 600;
   color: crimson;
   font-size: 1rem;
@@ -52,8 +52,7 @@ kbd {
 
 /* header css  */
 
-header
-{
+header {
   background-color: blueviolet;
 }
 
@@ -64,7 +63,7 @@ header
   min-height: 5rem;
 }
 
-.web-menu  {
+.web-menu {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
@@ -84,7 +83,7 @@ header
 }
 
 .menubar {
-  display:none;
+  display: none;
 }
 
 .usercard {
@@ -92,11 +91,19 @@ header
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-.title
-{
-  color:darkviolet;
+.title {
+  color: darkviolet;
   text-transform: capitalize;
   margin-bottom: 0.8rem;
+}
+
+.paratext {
+  text-transform: capitalize;
+}
+
+.container-title {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 
@@ -104,22 +111,21 @@ header
   .grid-col-3 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .menubar
-  {
+
+  .menubar {
     display: block;
   }
-  .web-menu
-  {
+
+  .web-menu {
     display: none;
   }
 
-  .mobile-menu ul
-  {
+  .mobile-menu ul {
     position: absolute;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color:cornflowerblue;
+    background-color: cornflowerblue;
     left: 0;
     top: 5rem;
     width: 100%;
@@ -146,9 +152,8 @@ header
 
 /* home css */
 
-.home-content
-{
-  text-align:center;
+.home-content {
+  text-align: center;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
@@ -159,46 +164,223 @@ header
   z-index: 0;
 }
 
-.flex-gap
-{
+
+.flex-gap {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
-.flex-gap a
-{
+.flex-gap a {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: blueviolet;
+  text-transform: capitalize;
+  background-color:aliceblue;
+  padding: 0.4rem 0.8rem;
+
 }
 
-.flex-gap a:nth-child(2){
+.flex-gap a:nth-child(2) {
   color: deeppink;
 }
 
-.home-content h2
-{
+.home-content h2 {
   font-size: 2rem;
+  font-style: italic;
 
 }
 
-.home-content p
-{
-  font-size: 1rem;
+.home-content p {
+  font-size: 0.9rem;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width:500px) {
-  .home-content p
-{
-  font-size: 0.9rem;
+  .home-content p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .home-content h1 {
+    font-size: 1.5rem;
+    filter: drop-shadow(4px 2px 4px rgb(98, 135, 168));
+    text-transform: uppercase;
+  }
+}
+
+/* movie css  */
+
+.movie-container {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.movie-card {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.poster {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+
+.movie-content {
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.movie-content h4 {
+  text-transform: uppercase;
   font-weight: 600;
 }
 
-.home-content h2
-{
-  font-size: 1.5rem;
-  filter: drop-shadow(4px 2px 4px rgb(241, 135, 13));
+.watch-now {
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.6rem;
 }
+
+.watch-btn {
+  background-color:white;
+  color: black;
+  /* padding: 0.4rem 1.2rem; */
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+.hit {
+ color:blue;
+}
+
+.superhit {
+  color:crimson;
+}
+
+.rating {
+  padding: 0.1rem 0.8rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width:750px) {
+  .movie-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:450px) {
+  .movie-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .movie-content p {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  .watch-btn {
+    font-size: 0.8rem;
+  }
+}
+
+
+.pagination {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination>button {
+  background-color: blueviolet;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  padding: 0.4rem 1rem;
+  text-align: center;
+}
+
+.deletepost {
+  background-color: red;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  padding: 0.4rem 1rem;
+  text-align: center;
+}
+
+.user-container
+{
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+}
+
+.profile-img
+{
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.username
+{
+  text-transform: uppercase;
+  color:darkmagenta;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.profile-url
+{
+  color: blue;
+  text-transform: capitalize;
+}
+
+.loading-more
+{
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: crimson;
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+@media screen and (max-width:900px) {
+  .user-container
+  {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (max-width:650px) {
+  .user-container
+  {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width:400px) {
+  .user-container
+  {
+    grid-template-columns: repeat(1,1fr);
+  }
 }
